@@ -5,7 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import {withRouter, Redirect} from 'react-router-dom';
+import { withRouter, Redirect } from 'react-router-dom';
 import Menu from '../../Menu/Menu';
 
 const useStyles = makeStyles((theme) => ({
@@ -25,10 +25,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const onSubmit = () => {
-    console.log("Button");
-    return <Redirect to='/menu' />
-   
-}
+	console.log('Button');
+	return <Redirect to='/menu' />;
+};
 
 function SignIn() {
 	const classes = useStyles();
@@ -40,7 +39,6 @@ function SignIn() {
 				</Typography>
 				<form noValidate>
 					<TextField
-                        
 						variant='outlined'
 						margin='normal'
 						required
